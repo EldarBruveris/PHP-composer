@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\BubbleSort;
+use App\QuickSort;
 
 require 'vendor/autoload.php';
 

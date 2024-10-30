@@ -19,7 +19,7 @@ class BubbleSort implements Sortable{
     }
 
     public function printSorted(array $array){
-        echo "List sorted by Bubble Sort method:\n";
-        print_r(sort($array));
+        echo "List sorted by Bubble Sorting:\n";
+        print_r($this->sort($array));
     }
 }

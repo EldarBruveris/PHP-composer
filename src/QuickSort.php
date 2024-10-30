@@ -24,7 +24,7 @@ class QuickSort implements Sortable{
     }
 
     public function printSorted(array $array){
-        echo "List sorted by Quick Sort method:\n";
-        print_r(sort($array));
+        echo "List sorted by Quick Sorting:\n";
+        print_r($this->sort($array));
     }
 }
