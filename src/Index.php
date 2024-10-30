@@ -1,17 +1,16 @@
 <?php
-
 declare(strict_types=1);
 
 namespace App;
 
-final class Index
-{
-    public function test()
-    {
-        echo "<br><br>";
-    }
 
-    public static function quickSort(array $array): array {
+interface Sortable{
+    public function sort(array $array):array; 
+    public function print_sorted(array $array);   
+}
+
+class QuickSort implements Sortable{
+    public function sort(array $array): array{
         if (count($array) < 2) {
             return $array;
         }
@@ -28,10 +27,17 @@ final class Index
             }
         }
     
-        return array_merge(self::quickSort($left), [$pivot], self::quickSort($right));
+        return array_merge($this->sort($left), [$pivot], $this->sort($right));
     }
 
-    public static function bubble_sort(array $array) : array {
+    public function print_sorted(array $array){
+        echo "List sorted by Quick Sort method:\n";
+        print_r(sort($array));
+    }
+}
+
+class BubbleSort implements Sortable{
+    public function sort(array $array):array {
         $n = count($array);
         for($i=0; $i<$n; $i++){
             for($j=0; $j<$n-1; $j++){
@@ -46,4 +52,8 @@ final class Index
         return $array;
     }
 
+    public function print_sorted(array $array){
+        echo "List sorted by Bubble Sort method:\n";
+        print_r(sort($array));
+    }
 }
