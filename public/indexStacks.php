@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Stack\Stack;
+use App\Stack\Stack;
 
 require 'vendor/autoload.php';
 

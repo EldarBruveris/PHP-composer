@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use App\BubbleSort;
-use App\QuickSort;
-use App\SelectionSort;
+use App\Sort\BubbleSort;
+use App\Sort\QuickSort;
+use App\Sort\SelectionSort;
 
 require 'vendor/autoload.php';
 

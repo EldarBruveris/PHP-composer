@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use App\BinarySearch;
-use App\LinearSearch;
+use App\Search\BinarySearch;
+use App\Search\LinearSearch;
 
 require 'vendor/autoload.php';
 

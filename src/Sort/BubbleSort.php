@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App;
+namespace App\Sort;
 
 final class BubbleSort implements Sortable
 {

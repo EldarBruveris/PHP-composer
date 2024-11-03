@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Stack;
+namespace App\Stack;
 
 final class Node
 {
