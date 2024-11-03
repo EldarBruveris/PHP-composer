@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Stack;
 
-final class Stack
+class Stack
 {
     private $top;
 
