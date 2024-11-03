@@ -1,12 +1,17 @@
 <?php
+
+declare(strict_types=1);
+
 namespace App;
 
-class SelectionSort implements Sortable{
-    public function sort(array $array):array{
-        for($i = 0; $i<count($array)-1; $i++){
+final class SelectionSort implements Sortable
+{
+    public function sort(array $array): array
+    {
+        for ($i = 0; $i<\count($array)-1; ++$i) {
             $min_index = $i;
-            for($j = $i+1; $j<count($array); $j++){
-                if($array[$j] < $array[$min_index]){
+            for ($j = $i+1; $j<\count($array); ++$j) {
+                if ($array[$j] < $array[$min_index]) {
                     $min_index = $j;
                 }
             }
@@ -18,8 +23,9 @@ class SelectionSort implements Sortable{
         return $array;
     }
 
-    public function printSorted(array $array){
+    public function printSorted(array $array): void
+    {
         echo "List sorted by Selection Sorting:\n";
-        print_r($this->sort($array));
+        \print_r($this->sort($array));
     }
 }
