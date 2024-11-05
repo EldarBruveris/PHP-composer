@@ -13,3 +13,6 @@ $tree->insert(7);
 
 echo "In-order Traversal:\n";
 $tree->inorderTraversal();
+
+$foundNode = $tree->search(7);
+echo $foundNode->data.PHP_EOL;

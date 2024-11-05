@@ -44,7 +44,7 @@ class BinaryTree {
             return null;
         }
         if ($data === $node->data) {
-            echo "Your node is finded!\n";
+            echo "Your node is finded: ";
             return $node;
         } elseif ($data < $node->data) {
             return $this->searchNode($node->left, $data);
